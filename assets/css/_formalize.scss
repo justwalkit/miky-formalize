@@ -4,27 +4,27 @@
 // `Widths
 //----------------------------------------------------------------------------------------------------
 
-.input_tiny {
+.input_xxs {
   width: 50px;
 }
 
-.input_small {
+.input_xs {
   width: 100px;
 }
 
-.input_medium {
+.input_sm {
   width: 150px;
 }
 
-.input_large {
+.input_md {
   width: 200px;
 }
 
-.input_xlarge {
+.input_lg {
   width: 250px;
 }
 
-.input_xxlarge {
+.input_xl {
   width: 300px;
 }
 
@@ -163,7 +163,7 @@ select[disabled] option,
 select[disabled] optgroup,
 textarea[disabled],
 a.button_disabled {
-  @include box-shadow(none);
+  box-shadow: none;
   -moz-user-select: -moz-none;
   -webkit-user-select: none;
   -khtml-user-select: none;
