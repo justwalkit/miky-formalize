@@ -3,7 +3,7 @@
   "description": "Teach your forms some manners!",
   "version": "1.0.0",
   "main": [
-    "assets/css/formalize.css",
+    "assets/css/_formalize.scss",
     "assets/js/jquery.formalize.js"
   ],
   "dependencies": {
