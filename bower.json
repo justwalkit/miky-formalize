@@ -5,7 +5,6 @@
   "main": [
     "assets/css/formalize.css",
     "assets/js/jquery.formalize.js",
-    "assets/images/*
   ],
   "license": "Eclipse",
   "ignore": [
