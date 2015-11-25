@@ -25,7 +25,7 @@ var FORMALIZE = (function($, window, document, undefined) {
       var i, j = this.init;
 
       for (i in j) {
-        j.hasOwnProperty(i) && j[i]();
+        j.hasOwnProperty(i) && j[i](); // jshint ignore:line
       }
     },
     // FORMALIZE.init
@@ -35,16 +35,6 @@ var FORMALIZE = (function($, window, document, undefined) {
         $(document.documentElement).on('click', 'a.button_disabled', function() {
           return false;
         });
-      },
-      // FORMALIZE.init.full_input_size
-      full_input_size: function() {
-        if (!$('textarea, input.input_full').length) {
-          return;
-        }
-
-        // This fixes width: 100% on <textarea> and class="input_full".
-        // It ensures that form elements don't go wider than container.
-        $('textarea, input.input_full').wrap('<span class="input_full_wrap"></span>');
       },
       // FORMALIZE.init.autofocus
       autofocus: function() {
