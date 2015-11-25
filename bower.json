@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "main": [
     "assets/css/formalize.css",
-    "assets/js/jquery.formalize.js",
+    "assets/js/jquery.formalize.js"
   ],
   "dependencies": {
     "jquery": ">=1.6"
