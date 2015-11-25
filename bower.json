@@ -8,7 +8,7 @@
   ],
   "dependencies": {
     "jquery": ">=1.6"
-  }
+  },
   "license": "Eclipse",
   "ignore": [
     ".jshintrc",
