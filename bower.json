@@ -6,12 +6,12 @@
     "assets/css/formalize.css",
     "assets/js/jquery.formalize.js",
   ],
+  "dependencies": {
+    "jquery": ">=1.6"
+  }
   "license": "Eclipse",
   "ignore": [
     ".jshintrc",
     "**/*.txt"
-  ],
-  "dependencies": {
-    "jquery": ">=1.6"
-  }
+  ]
 }
