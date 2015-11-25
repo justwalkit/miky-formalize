@@ -1,12 +1,12 @@
 {
   "name": "nathansmith/formalize",
+  "description": "Teach your forms some manners!",
   "version": "1.0.0",
   "main": [
     "assets/css/formalize.css",
     "assets/js/jquery.formalize.js",
     "assets/images/*
   ],
-  "description": "Teach your forms some manners!",
   "license": "Eclipse",
   "ignore": [
     ".jshintrc",
