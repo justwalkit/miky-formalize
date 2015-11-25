@@ -17,8 +17,6 @@ var FORMALIZE = (function($, window, document, undefined) {
   // Private constants.
   var PLACEHOLDER_SUPPORTED = 'placeholder' in document.createElement('input');
   var AUTOFOCUS_SUPPORTED = 'autofocus' in document.createElement('input');
-  var IE6 = IE(6);
-  var IE7 = IE(7);
 
   // Expose innards of FORMALIZE.
   return {
@@ -40,58 +38,13 @@ var FORMALIZE = (function($, window, document, undefined) {
       },
       // FORMALIZE.init.full_input_size
       full_input_size: function() {
-        if (!IE7 || !$('textarea, input.input_full').length) {
+        if (!$('textarea, input.input_full').length) {
           return;
         }
 
         // This fixes width: 100% on <textarea> and class="input_full".
         // It ensures that form elements don't go wider than container.
         $('textarea, input.input_full').wrap('<span class="input_full_wrap"></span>');
-      },
-      // FORMALIZE.init.ie6_skin_inputs
-      ie6_skin_inputs: function() {
-        // Test for Internet Explorer 6.
-        if (!IE6 || !$('input, select, textarea').length) {
-          // Exit if the browser is not IE6,
-          // or if no form elements exist.
-          return;
-        }
-
-        // For <input type="submit" />, etc.
-        var button_regex = /button|submit|reset/;
-
-        // For <input type="text" />, etc.
-        var type_regex = /date|datetime|datetime-local|email|month|number|password|range|search|tel|text|time|url|week/;
-
-        $('input').each(function() {
-          var el = $(this);
-
-          // Is it a button?
-          if (this.getAttribute('type').match(button_regex)) {
-            el.addClass('ie6_button');
-
-            /* Is it disabled? */
-            if (this.disabled) {
-              el.addClass('ie6_button_disabled');
-            }
-          }
-          // Or is it a textual input?
-          else if (this.getAttribute('type').match(type_regex)) {
-            el.addClass('ie6_input');
-
-            /* Is it disabled? */
-            if (this.disabled) {
-              el.addClass('ie6_input_disabled');
-            }
-          }
-        });
-
-        $('textarea, select').each(function() {
-          /* Is it disabled? */
-          if (this.disabled) {
-            $(this).addClass('ie6_input_disabled');
-          }
-        });
       },
       // FORMALIZE.init.autofocus
       autofocus: function() {
