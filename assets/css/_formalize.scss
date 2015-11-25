@@ -164,9 +164,6 @@ select[disabled] optgroup,
 textarea[disabled],
 a.button_disabled {
   box-shadow: none;
-  -moz-user-select: -moz-none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
   user-select: none;
   color: #888;
   cursor: default;
@@ -223,7 +220,6 @@ select[size="1"] {
   }
 
   ::-webkit-validation-bubble-message {
-    -webkit-box-shadow: none;
     box-shadow: none;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #666), color-stop(1, black));
     border: 0;
@@ -238,7 +234,6 @@ select[size="1"] {
   ::-webkit-validation-bubble-arrow,
   ::-webkit-validation-bubble-top-outer-arrow,
   ::-webkit-validation-bubble-top-inner-arrow {
-    -webkit-box-shadow: none;
     box-shadow: none;
     background: #666;
     border-color: #666;
