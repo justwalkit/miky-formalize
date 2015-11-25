@@ -1,0 +1,18 @@
+{
+  "name": "nathansmith/formalize",
+  "version": "1.0.0",
+  "main": [
+    "assets/css/formalize.css",
+    "assets/js/jquery.formalize.js",
+    "assets/images/*
+  ],
+  "description": "Teach your forms some manners!",
+  "license": "Eclipse",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {
+    "jquery": ">=1.6"
+  }
+}
